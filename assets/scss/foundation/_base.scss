@@ -1,0 +1,60 @@
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: 1.6;
+    color: $color-dark;
+    background-color: $color-light;
+    overflow-x: hidden;
+  }
+  
+  a {
+    color: $color-primary;
+    text-decoration: none;
+    transition: color $transition-speed $transition-ease;
+    
+    &:hover {
+      color: darken($color-primary, 10%);
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+    margin-bottom: $spacing-md;
+  }
+  
+  h1 {
+    font-size: $font-size-xxlarge;
+  }
+  
+  h2 {
+    font-size: $font-size-xlarge;
+  }
+  
+  h3 {
+    font-size: $font-size-large;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+  }
+  
+  section {
+    padding: $spacing-xxl 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+  }

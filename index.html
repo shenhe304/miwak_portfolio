@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miwa's portfolio!</title>
+    <title>Miwa - UX/UI Designer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="l-header">
+        <div class="p-header">
+            <div class="p-header__logo">M</div>
+            <nav class="p-header__nav">
+                <!-- ナビゲーションメニューは必要に応じて追加 -->
+            </nav>
+        </div>
+    </header>
+
+    <main class="l-main">
+        <!-- Hero Section -->
+        <section class="p-hero">
+            <div class="p-hero__content">
+                <p class="p-hero__greeting">Hello, Curious.</p>
+                <h1 class="p-hero__title">I'm Miwa<br>UX/UI Designer</h1>
+                <p class="p-hero__subtitle">With 5+ years experience.<br>Based in Japan/Taiwan</p>
+            </div>
+            <div class="p-hero__image">
+                <div class="p-hero__japan-flag"></div>
+            </div>
+            <div class="p-hero__pattern p-hero__pattern--top-right"></div>
+            <div class="p-hero__pattern p-hero__pattern--bottom-left"></div>
+        </section>
+
+        <!-- Works Section -->
+        <section class="p-works">
+            <div class="p-works__grid">
+                <div class="p-works__item p-works__item--wide">
+                    <img src="assets/images/project-1.jpg" alt="Dashboard UI Project" class="p-works__image">
+                </div>
+                <div class="p-works__item">
+                    <img src="assets/images/project-2.jpg" alt="Web Design Project" class="p-works__image">
+                </div>
+                <div class="p-works__item">
+                    <img src="assets/images/project-3.jpg" alt="Responsive Design Project" class="p-works__image">
+                </div>
+                <div class="p-works__item">
+                    <img src="assets/images/project-4.jpg" alt="Mobile App Design" class="p-works__image">
+                </div>
+                <div class="p-works__item p-works__item--featured">
+                    <!-- Featured project space or CTA -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="p-about">
+            <div class="p-about__content">
+                <h2 class="c-heading">Design Without Borders</h2>
+                <p class="p-about__text">
+                    A designer who blends cultures, colors, and creativity. With experience in Japan, Taiwan,
+                    and Canada, I create playful yet refined designs—inspired by Japan's elegance,
+                    Taiwan's energy, and Canada's simplicity.
+                </p>
+                <h3 class="p-about__subheading">Inspired by Cultures.</h3>
+            </div>
+            <div class="p-about__profile">
+                <p class="p-about__cta">Click to see profile details!</p>
+                <div class="p-about__photo-container">
+                    <img src="assets/images/common/img_profile.png" alt="Miwa's photo" class="p-about__photo">
+                </div>
+                <div class="p-about__buttons">
+                    <div class="p-about__button-wrapper">
+                        <button class="c-button">About me</button>
+                    </div>
+                    <div class="p-about__button-wrapper">
+                        <button class="c-button">Resume</button>
+                    </div>
+                    <div class="p-about__button-wrapper">
+                        <button class="c-button">Design story</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="p-contact">
+            <h2 class="p-contact__title">Come Say Hi! (or Konnichiwa!)</h2>
+            <div class="p-contact__social">
+                <a href="#" class="p-contact__social-link">
+                    <div class="p-contact__social-icon"></div>
+                </a>
+                <a href="#" class="p-contact__social-link">
+                    <div class="p-contact__social-icon"></div>
+                </a>
+                <a href="#" class="p-contact__social-link">
+                    <div class="p-contact__social-icon"></div>
+                </a>
+                <a href="#" class="p-contact__social-link">
+                    <div class="p-contact__social-icon"></div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="l-footer">
+        <div class="p-footer">
+            <div class="p-footer__links">
+                <a href="#" class="p-footer__link">Home</a>
+                <a href="#" class="p-footer__link">About</a>
+                <a href="#" class="p-footer__link">Resume</a>
+            </div>
+            <div class="p-footer__info">
+                <p class="p-footer__location">Location: Japan / Taiwan</p>
+                <p class="p-footer__email">Email</p>
+            </div>
+        </div>
+    </footer>
     
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
