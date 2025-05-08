@@ -15,7 +15,6 @@
 
     &__item {
         transition: transform $transition-speed $transition-ease;
-        }
 
         &--wide {
             grid-column: span 2;
@@ -35,18 +34,15 @@
             }
         }
     }
-
     &__image {
         border-radius: 25px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         transition: transform $transition-speed $transition-ease;
+        transform: scale(1.05);
 
         &:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
-            .p-works__image {
-                transform: scale(1.05);
-            }
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+        }
     }
 }

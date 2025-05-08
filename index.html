@@ -10,12 +10,12 @@
     <header class="l-header">
         <div class="l-container">
             <div class="p-header">
-                <div class="p-header__logo"><img src="assets/images/common/logo.svg" alt="logo"></div>
+                <div class="p-header__logo">M</div>
                 <nav class="p-header__nav">
                     <ul class="p-global-nav__list">
                         <li class="p-global-nav__item"><a href="#" class="p-global-nav__link">Home</a></li>
                         <li class="p-global-nav__item"><a href="#about" class="p-global-nav__link">About</a></li>
-                        <li class="p-global-nav__item"><a href="#works" class="p-global-nav__link">Resume</a></li>
+                        <li class="p-global-nav__item"><a href="#resume" class="p-global-nav__link">Resume</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,16 +54,13 @@
                 <div class="p-works__item">
                     <img src="assets/images/works/project_lp.png" alt="Mobile App Design" class="p-works__image">
                 </div>
-                <div class="p-works__item p-works__item--featured">
-                    <!-- Featured project space or CTA -->
-                </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section class="p-about" id="about">
             <div class="p-about__content">
-                <h2 class="c-heading">Design Without Borders</h2>
+                <h2 class="c-heading c-heading--lg">Design Without Borders</h2>
                 <p class="p-about__text">
                     A designer who blends cultures, colors, and creativity. With experience in Japan, Taiwan,
                     and Canada, I create playful yet refined designs—inspired by Japan's elegance,
@@ -71,16 +68,27 @@
                 </p>
                 <h3 class="p-about__subheading">Inspired by Cultures.</h3>
             </div>
-            <div class="p-about__profile">
-                <div class="p-about__photo-l-container">
-                    <img src="assets/images/common/img_profile.png" alt="Miwa's photo" class="p-about__photo">
-                </div>
-                <div class="p-about__buttons">
-                    <div class="p-about__button-wrapper">
-                        <button class="c-button">Resume</button>
+        </section>
+
+        <!-- Profile Section -->
+        <section class="p-profile">
+            <div class="l-container">
+                <p class="p-profile__text">Click to see profile details!</p>
+                <div class="p-profile__arrow">↘</div>
+                <div class="p-profile__content">
+                    <div class="p-profile__photo-container">
+                        <img src="assets/images/common/img_profile.png" alt="Miwa's photo" class="p-profile__photo">
                     </div>
-                    <div class="p-about__button-wrapper">
-                        <button class="c-button">Design story</button>
+                    <div class="p-profile__buttons">
+                        <div class="p-profile__button-wrapper">
+                            <a href="#" class="c-button">About me</a>
+                        </div>
+                        <div class="p-profile__button-wrapper">
+                            <a href="#" class="c-button">Resume</a>
+                        </div>
+                        <div class="p-profile__button-wrapper">
+                            <a href="#" class="c-button">Design story</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,17 +99,17 @@
             <div class="l-container">
                 <h2 class="p-contact__title">Come Say Hi! (or Konnichiwa!)</h2>
                 <div class="p-contact__social">
-                    <a href="https://www.linkedin.com/in/miwa30/" class="p-contact__social-link">
-                        <img src="/assets/images/icon/" class="p-contact__social-icon" alt="LinkedIn"></img>
+                    <a href="https://www.linkedin.com/" class="p-contact__social-link">
+                        <div class="p-contact__social-icon"></div>
                     </a>
-                    <a href="https://dribbble.com/miwak" class="p-contact__social-link">
-                        <div src="/assets/images/icon/" class="p-contact__social-icon" alt="Dribbble"></div>
+                    <a href="https://dribbble.com/" class="p-contact__social-link">
+                        <div class="p-contact__social-icon"></div>
                     </a>
-                    <a href="https://github.com/shenhe304" class="p-contact__social-link">
-                        <div src="/assets/images/icon/" class="p-contact__social-icon" alt="GitHub"></div>
+                    <a href="https://github.com/" class="p-contact__social-link">
+                        <div class="p-contact__social-icon"></div>
                     </a>
-                    <a href="mailto:miwak.work@gmail.com" class="p-contact__social-link">
-                        <div src="/assets/images/icon/" class="p-contact__social-icon" alt="Email"></div>
+                    <a href="mailto:email@example.com" class="p-contact__social-link">
+                        <div class="p-contact__social-icon"></div>
                     </a>
                 </div>
             </div>
@@ -111,13 +119,15 @@
     <footer class="l-footer">
         <div class="l-container">
             <div class="p-footer">
-                <div class="p-footer__links">
-                    <a href="#" class="p-footer__link">Home</a>
-                    <a href="#about" class="p-footer__link">About</a>
-                    <a href="#" class="p-footer__link">Resume</a>
-                </div>
+                <nav class="p-footer-nav">
+                    <ul class="p-footer-nav__list">
+                        <li class="p-footer-nav__item"><a href="#" class="p-footer-nav__link">Home</a></li>
+                        <li class="p-footer-nav__item"><a href="#about" class="p-footer-nav__link">About</a></li>
+                        <li class="p-footer-nav__item"><a href="#resume" class="p-footer-nav__link">Resume</a></li>
+                    </ul>
+                </nav>
                 <div class="p-footer__info">
-                    <p class="p-footer__location">Location: Japan / Taiwan / Email</p>
+                    <p class="p-footer__location">Location: <span>Japan</span> / <span>Taiwan</span> / <span>Email</span></p>
                 </div>
             </div>
         </div>
