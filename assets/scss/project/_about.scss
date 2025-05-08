@@ -12,6 +12,8 @@
     &__content {
         flex: 1;
         padding-right: $spacing-xl;
+        width: 100%;
+        padding-right: 0;
 
         @media (max-width: $breakpoint-lg) {
             padding-right: 0;
