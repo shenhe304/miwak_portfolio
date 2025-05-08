@@ -23,19 +23,18 @@ document.addEventListener('DOMContentLoaded', function () {
     if (aboutButtons.length > 0) {
         aboutButtons.forEach(button => {
             button.addEventListener('click', function () {
-                // Add your functionality here
-                console.log('Button clicked: ' + this.textContent.trim());
-
-                // Example: Show a different section based on button clicked
                 const buttonText = this.textContent.trim().toLowerCase();
-
-                // You can implement modals or content switching here
+                
+                // Handle button clicks
                 if (buttonText === 'about me') {
-                    // Show about me content
+                    console.log('About me clicked');
+                    // Implement about me action
                 } else if (buttonText === 'resume') {
-                    // Show resume content or download resume
+                    console.log('Resume clicked');
+                    // Implement resume action
                 } else if (buttonText === 'design story') {
-                    // Show design story content
+                    console.log('Design story clicked');
+                    // Implement design story action
                 }
             });
         });
@@ -53,20 +52,26 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Intersection Observer for scroll animations
+    // Add scroll animations
     if ('IntersectionObserver' in window) {
-        const sections = document.querySelectorAll('section');
+        const observedElements = document.querySelectorAll('.p-works__item, .p-about, .p-contact');
 
-        const sectionObserver = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
+                    
+                    // Add staggered animation for work items
+                    if (entry.target.classList.contains('p-works__item')) {
+                        const delay = Array.from(document.querySelectorAll('.p-works__item')).indexOf(entry.target) * 150;
+                        entry.target.style.transitionDelay = `${delay}ms`;
+                    }
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.2 });
 
-        sections.forEach(section => {
-            sectionObserver.observe(section);
+        observedElements.forEach(el => {
+            observer.observe(el);
         });
     }
 });

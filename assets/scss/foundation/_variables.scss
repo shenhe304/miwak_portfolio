@@ -3,6 +3,7 @@ $color-primary: #B01923; // Japanese red from the flag
 $color-secondary: #4A90E2; // Blue from the mobile project
 $color-tertiary: #4CAF50; // Green from the project
 $color-light: #F8F8F8; // Background light color
+$color-cream: #FFF9F3; // Hero background color
 $color-dark: #333333; // Text dark color
 $color-gray: #CCCCCC; // Gray for subtle elements
 
@@ -15,6 +16,7 @@ $font-size-small: 14px;
 $font-size-large: 18px;
 $font-size-xlarge: 24px;
 $font-size-xxlarge: 32px;
+$font-size-hero: 3rem;
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;
@@ -26,6 +28,9 @@ $spacing-md: 16px;
 $spacing-lg: 24px;
 $spacing-xl: 32px;
 $spacing-xxl: 48px;
+
+// Container
+$container-width: 80%;
 
 // Breakpoints
 $breakpoint-sm: 576px;
@@ -48,3 +53,6 @@ $z-index-backdrop: -1;
 $z-index-default: 1;
 $z-index-header: 100;
 $z-index-modal: 200;
+
+// Animation
+$animation-stagger-delay: 150ms;

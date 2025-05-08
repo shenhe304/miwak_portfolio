@@ -8,32 +8,41 @@
 </head>
 <body>
     <header class="l-header">
-        <div class="p-header">
-            <div class="p-header__logo"><img src="/assets/images/common/logo.svg" alt="logo"></div>
-            <nav class="p-header__nav">
-            </nav>
+        <div class="l-container">
+            <div class="p-header">
+                <div class="p-header__logo"><img src="/assets/images/common/logo.svg" alt="logo"></div>
+                <nav class="p-header__nav">
+                    <ul class="p-global-nav__list">
+                        <li class="p-global-nav__item"><a href="#" class="p-global-nav__link">Home</a></li>
+                        <li class="p-global-nav__item"><a href="#" class="p-global-nav__link">About</a></li>
+                        <li class="p-global-nav__item"><a href="#" class="p-global-nav__link">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main class="l-main">
         <!-- Hero Section -->
         <section class="p-hero">
-            <div class="p-hero__content">
-                <p class="p-hero__greeting">Hello, Canada</p>
-                <h1 class="p-hero__title">I'm Miwa<br>UX/UI Designer</h1>
-                <p class="p-hero__subtitle">With 5+ years experience.<br>Based in Vancouver♡</p>
+            <div class="l-container">
+                <div class="p-hero__content">
+                    <p class="p-hero__greeting">Hello, Canada</p>
+                    <h1 class="p-hero__title">I'm Miwa<br>UX/UI Designer</h1>
+                    <p class="p-hero__subtitle">With 5+ years experience.<br>Based in Vancouver♡</p>
+                </div>
+                <div class="p-hero__image">
+                    <div class="p-hero__japan-flag"></div>
+                </div>
+                <div class="p-hero__pattern p-hero__pattern--top-right"></div>
+                <div class="p-hero__pattern p-hero__pattern--bottom-left"></div>
             </div>
-            <div class="p-hero__image">
-                <div class="p-hero__japan-flag"></div>
-            </div>
-            <div class="p-hero__pattern p-hero__pattern--top-right"></div>
-            <div class="p-hero__pattern p-hero__pattern--bottom-left"></div>
         </section>
 
         <!-- Works Section -->
         <section class="p-works">
             <div class="p-works__grid">
-                <div class="p-works__item p-works__item--wide">
+                <div class="p-works__item">
                     <img src="assets/images/works/project_system.png" alt="Dashboard UI Project" class="p-works__image">
                 </div>
                 <div class="p-works__item">
@@ -43,7 +52,7 @@
                     <img src="assets/images/works/project_modal.png" alt="Visual modal design Project" class="p-works__image">
                 </div>
                 <div class="p-works__item">
-                    <img src="assets/images/works/project_lp.png" alt="Landing page Design" class="p-works__image">
+                    <img src="assets/images/works/project_lp.png" alt="Mobile App Design" class="p-works__image">
                 </div>
                 <div class="p-works__item p-works__item--featured">
                     <!-- Featured project space or CTA -->
@@ -64,7 +73,7 @@
             </div>
             <div class="p-about__profile">
                 <p class="p-about__cta">Click to see profile details!</p>
-                <div class="p-about__photo-container">
+                <div class="p-about__photo-l-container">
                     <img src="assets/images/common/img_profile.png" alt="Miwa's photo" class="p-about__photo">
                 </div>
                 <div class="p-about__buttons">
@@ -83,34 +92,37 @@
 
         <!-- Contact Section -->
         <section class="p-contact">
-            <h2 class="p-contact__title">Come Say Hi! (or Konnichiwa!)</h2>
-            <div class="p-contact__social">
-                <a href="#" class="p-contact__social-link">
-                    <div class="p-contact__social-icon"></div>
-                </a>
-                <a href="#" class="p-contact__social-link">
-                    <div class="p-contact__social-icon"></div>
-                </a>
-                <a href="#" class="p-contact__social-link">
-                    <div class="p-contact__social-icon"></div>
-                </a>
-                <a href="#" class="p-contact__social-link">
-                    <div class="p-contact__social-icon"></div>
-                </a>
+            <div class="l-container">
+                <h2 class="p-contact__title">Come Say Hi! (or Konnichiwa!)</h2>
+                <div class="p-contact__social">
+                    <a href="#" class="p-contact__social-link">
+                        <div class="p-contact__social-icon"></div>
+                    </a>
+                    <a href="#" class="p-contact__social-link">
+                        <div class="p-contact__social-icon"></div>
+                    </a>
+                    <a href="#" class="p-contact__social-link">
+                        <div class="p-contact__social-icon"></div>
+                    </a>
+                    <a href="#" class="p-contact__social-link">
+                        <div class="p-contact__social-icon"></div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="l-footer">
-        <div class="p-footer">
-            <div class="p-footer__links">
-                <a href="#" class="p-footer__link">Home</a>
-                <a href="#" class="p-footer__link">About</a>
-                <a href="#" class="p-footer__link">Resume</a>
-            </div>
-            <div class="p-footer__info">
-                <p class="p-footer__location">Location: Japan / Taiwan</p>
-                <p class="p-footer__email">Email</p>
+        <div class="l-container">
+            <div class="p-footer">
+                <div class="p-footer__links">
+                    <a href="#" class="p-footer__link">Home</a>
+                    <a href="#" class="p-footer__link">About</a>
+                    <a href="#" class="p-footer__link">Resume</a>
+                </div>
+                <div class="p-footer__info">
+                    <p class="p-footer__location">Location: Japan / Taiwan / Email</p>
+                </div>
             </div>
         </div>
     </footer>

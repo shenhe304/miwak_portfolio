@@ -4,7 +4,20 @@
   display: flex;
   align-items: center;
   padding: $spacing-xxl $spacing-lg;
+  background-color: $color-cream;
   overflow: hidden;
+  
+  .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: $container-width;
+    
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
   
   &__content {
     width: 50%;
@@ -22,7 +35,7 @@
   }
   
   &__title {
-    font-size: 3rem;
+    font-size: $font-size-hero;
     font-weight: $font-weight-bold;
     margin-bottom: $spacing-md;
     line-height: 1.2;
@@ -53,8 +66,12 @@
     z-index: $z-index-default;
     
     @media (max-width: $breakpoint-md) {
-      opacity: 0.2;
-      right: 0;
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: none;
+      margin-top: $spacing-xxl;
+      opacity: 0.8;
     }
   }
   
