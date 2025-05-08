@@ -1,0 +1,10 @@
+.c-logo {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-large;
+    color: $color-dark;
+
+    &--footer {
+        font-size: $font-size-base;
+        color: rgba($color-dark, 0.8);
+    }
+}

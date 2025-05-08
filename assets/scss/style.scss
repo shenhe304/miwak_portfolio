@@ -13,14 +13,18 @@
 // Object
 // Component
 @import "object/component/button";
+@import "object/component/section-title";
 @import "object/component/heading";
 @import "object/component/icon";
+@import "object/component/logo";
 
 // Project
 @import "project/hero";
 @import "project/works";
 @import "project/about";
 @import "project/contact";
+@import "project/global-nav";
+@import "project/footer-nav";
 
 // Utility
 @import "utility/utility";

@@ -1,0 +1,24 @@
+.p-footer-nav {
+  &__list {
+    display: flex;
+    gap: $spacing-lg;
+    
+    @media (max-width: $breakpoint-sm) {
+      flex-direction: column;
+      gap: $spacing-md;
+    }
+  }
+  
+  &__item {
+    position: relative;
+  }
+  
+  &__link {
+    font-size: $font-size-small;
+    color: rgba($color-dark, 0.8);
+    
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.p-global-nav {
+  &__list {
+    display: flex;
+    gap: $spacing-lg;
+    
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+  
+  &__item {
+    position: relative;
+  }
+  
+  &__link {
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    color: $color-dark;
+    position: relative;
+    padding-bottom: $spacing-xs;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $color-primary;
+      transition: width $transition-speed $transition-ease;
+    }
+    
+    &:hover {
+      color: $color-primary;
+      
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}

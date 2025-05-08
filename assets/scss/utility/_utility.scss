@@ -1,0 +1,113 @@
+// Text utilities
+.u-text-center {
+    text-align: center;
+}
+
+.u-text-left {
+    text-align: left;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
+.u-text-bold {
+    font-weight: $font-weight-bold;
+}
+
+// Margin utilities
+.u-mt-0 {
+    margin-top: 0;
+}
+
+.u-mt-xs {
+    margin-top: $spacing-xs;
+}
+
+.u-mt-sm {
+    margin-top: $spacing-sm;
+}
+
+.u-mt-md {
+    margin-top: $spacing-md;
+}
+
+.u-mt-lg {
+    margin-top: $spacing-lg;
+}
+
+.u-mt-xl {
+    margin-top: $spacing-xl;
+}
+
+// Padding utilities
+.u-p-0 {
+    padding: 0;
+}
+
+.u-p-xs {
+    padding: $spacing-xs;
+}
+
+.u-p-sm {
+    padding: $spacing-sm;
+}
+
+.u-p-md {
+    padding: $spacing-md;
+}
+
+.u-p-lg {
+    padding: $spacing-lg;
+}
+
+// Display utilities
+.u-display-block {
+    display: block;
+}
+
+.u-display-flex {
+    display: flex;
+}
+
+.u-display-none {
+    display: none;
+}
+
+// Responsive utilities
+@media (max-width: $breakpoint-md) {
+    .u-hide-md {
+        display: none;
+    }
+}
+
+@media (max-width: $breakpoint-sm) {
+    .u-hide-sm {
+        display: none;
+    }
+}
+
+// Color utilities
+.u-color-primary {
+    color: $color-primary;
+}
+
+.u-color-dark {
+    color: $color-dark;
+}
+
+.u-color-light {
+    color: $color-light;
+}
+
+.u-bg-primary {
+    background-color: $color-primary;
+}
+
+.u-bg-light {
+    background-color: $color-light;
+}
+
+.u-bg-dark {
+    background-color: $color-dark;
+}
