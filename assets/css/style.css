@@ -176,7 +176,7 @@ section {
 
 .l-container {
   width: 100%;
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -333,7 +333,7 @@ section {
   display: flex;
   align-items: center;
   position: relative;
-  width: 90%;
+  width: 95%;
 }
 @media (max-width: 768px) {
   .p-hero .container {
@@ -442,7 +442,6 @@ section {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
   margin: 0 auto;
-  padding: 0 24px;
 }
 @media (max-width: 768px) {
   .p-works__grid {
@@ -482,7 +481,7 @@ section {
 }
 
 .p-about {
-  padding: 48px 24px;
+  padding: 148px 24px;
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
