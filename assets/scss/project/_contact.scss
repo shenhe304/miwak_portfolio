@@ -10,7 +10,7 @@
     &__social {
         display: flex;
         justify-content: center;
-        gap: $spacing-lg;
+        gap: $spacing-xxl;
         margin-top: $spacing-xl;
 
         @media (max-width: $breakpoint-sm) {

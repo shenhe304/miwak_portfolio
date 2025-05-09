@@ -2,6 +2,11 @@
   &__list {
     display: flex;
     gap: $spacing-lg;
+
+    &:first-child{
+      border-bottom: 1px solid rgba($color-dark, 0.1);
+      padding-bottom: 8px;
+    }
     
     @media (max-width: $breakpoint-sm) {
       flex-direction: column;
@@ -20,5 +25,11 @@
     &:hover {
       color: $color-primary;
     }
+  }
+
+  &__wrapper{
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
   }
 }

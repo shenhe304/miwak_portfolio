@@ -13,32 +13,23 @@
     }
 
     &__text{
-        font-size: 16px;
-        margin-bottom: 8px;
+        font-size: 32px;
+        margin-bottom: 0;
         text-align: left;
     }
 
     &__arrow{
-        font-size: 24px;
-        margin-bottom: 24px;
+        font-size: 44px;
         text-align: left;
         padding-left: 48px;
     }
-    
-    &__links{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     &__photo-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        position: relative;
     }
 
     &__photo {
-        width: 100%;
+        width: 60%;
         height: 100%;
         object-fit: cover;
     }
@@ -58,12 +49,16 @@
 
 
 .p-profile__button-wrapper .c-button {
-    width: 100%;
-    display: block;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 12px 24px;
     background-color: #F8F8F8;
     border-radius: 8px;
     text-align: center;
+    font-size: 32px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

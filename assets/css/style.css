@@ -560,7 +560,7 @@ section {
 .p-contact__social {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 48px;
   margin-top: 32px;
 }
 @media (max-width: 576px) {
@@ -620,6 +620,10 @@ section {
   display: flex;
   gap: 24px;
 }
+.p-footer-nav__list:first-child {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+  padding-bottom: 8px;
+}
 @media (max-width: 576px) {
   .p-footer-nav__list {
     flex-direction: column;
@@ -636,6 +640,11 @@ section {
 .p-footer-nav__link:hover {
   color: #B01923;
 }
+.p-footer-nav__wrapper {
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Profile Section Styles */
 .p-profile {
@@ -651,28 +660,20 @@ section {
   align-items: center;
 }
 .p-profile__text {
-  font-size: 16px;
-  margin-bottom: 8px;
+  font-size: 32px;
+  margin-bottom: 0;
   text-align: left;
 }
 .p-profile__arrow {
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: 44px;
   text-align: left;
   padding-left: 48px;
 }
-.p-profile__links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .p-profile__photo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
 }
 .p-profile__photo {
-  width: 100%;
+  width: 60%;
   height: 100%;
   object-fit: cover;
 }
@@ -688,12 +689,16 @@ section {
 }
 
 .p-profile__button-wrapper .c-button {
-  width: 100%;
-  display: block;
+  width: 400px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 24px;
   background-color: #F8F8F8;
   border-radius: 8px;
   text-align: center;
+  font-size: 32px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
