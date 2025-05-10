@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miwa|UX/UI Designer</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
     <header class="l-header">
@@ -34,7 +35,16 @@
                     </div>
 
                     <div class="p-hero__image">
-                        <img src="assets/images/common/hero.png" alt="hero image">
+                        <div class="hero-image-container">
+                            <img src="assets/images/common/hero.png" alt="hero image" class="hero-img">
+                            <!-- Add decorative elements for animation -->
+                            <div class="hero-decoration circle-1"></div>
+                            <div class="hero-decoration circle-2"></div>
+                            <div class="hero-decoration square-1"></div>
+                            <div class="hero-decoration triangle-1"></div>
+                            <div class="hero-decoration maple-1"></div>
+                            <div class="hero-decoration maple-2"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,5 +155,6 @@
     </footer>
     
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/gsap.js"></script>
 </body>
 </html>
