@@ -1,4 +1,5 @@
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -77,25 +78,25 @@ select {
   }
 }
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Alexandria", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #333333;
+  color: #4A4948;
   background-color: #F8F8F8;
   overflow-x: hidden;
 }
 
 a {
-  color: #B01923;
+  color: #A41919;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 a:hover {
-  color: #83131a;
+  color: #781212;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Alexandria", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 16px;
@@ -139,7 +140,7 @@ section {
 .l-header {
   width: 100%;
   padding: 16px 0;
-  background-color: #FFF9F3;
+  background-color: #FCFAF5;
 }
 .l-header--scrolled {
   background-color: rgba(255, 255, 255, 0.95);
@@ -154,7 +155,7 @@ section {
 .p-header__logo {
   font-size: 24px;
   font-weight: 700;
-  color: #B01923;
+  color: #A41919;
 }
 .p-header__nav {
   display: flex;
@@ -164,14 +165,14 @@ section {
   display: block;
   width: 100%;
   overflow: hidden;
-  background-color: #FFF9F3;
+  background-color: #FCFAF5;
 }
 
 .l-footer {
   background-color: #F8F8F8;
   padding: 24px 0;
-  border-top: 1px solid rgba(51, 51, 51, 0.1);
-  background-color: #FFF9F3;
+  border-top: 1px solid rgba(74, 73, 72, 0.1);
+  background-color: #FCFAF5;
 }
 
 .l-container {
@@ -201,7 +202,7 @@ section {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  color: #333333;
+  color: #4A4948;
 }
 .c-button:hover {
   transform: translateY(-2px);
@@ -212,18 +213,18 @@ section {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 .c-button--primary {
-  background-color: #B01923;
+  background-color: #A41919;
   color: white;
 }
 .c-button--primary:hover {
-  background-color: #83131a;
+  background-color: #781212;
 }
 .c-button--secondary {
   background-color: transparent;
-  border: 1px solid #333333;
+  border: 1px solid #4A4948;
 }
 .c-button--secondary:hover {
-  background-color: #333333;
+  background-color: #4A4948;
   color: white;
 }
 
@@ -240,7 +241,7 @@ section {
   left: 0;
   width: 60px;
   height: 3px;
-  background-color: #B01923;
+  background-color: #A41919;
 }
 .c-section-title--center {
   text-align: center;
@@ -251,7 +252,7 @@ section {
 }
 
 .c-heading {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Alexandria", sans-serif;
   font-weight: 700;
   margin-bottom: 24px;
   position: relative;
@@ -275,7 +276,7 @@ section {
   left: 0;
   width: 60px;
   height: 3px;
-  background-color: #B01923;
+  background-color: #A41919;
 }
 .c-heading--center {
   text-align: center;
@@ -314,11 +315,11 @@ section {
 .c-logo {
   font-weight: 700;
   font-size: 18px;
-  color: #333333;
+  color: #4A4948;
 }
 .c-logo--footer {
   font-size: 16px;
-  color: rgba(51, 51, 51, 0.8);
+  color: rgba(74, 73, 72, 0.8);
 }
 
 .p-hero {
@@ -457,8 +458,8 @@ section {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 24px;
-  border: 5px solid #B01923;
-  background-color: #B01923;
+  border: 5px solid #A41919;
+  background-color: #A41919;
 }
 .p-about__photo {
   width: 100%;
@@ -525,7 +526,7 @@ section {
 .p-global-nav__link {
   font-size: 16px;
   font-weight: 400;
-  color: #333333;
+  color: #4A4948;
   position: relative;
   padding-bottom: 4px;
 }
@@ -536,11 +537,11 @@ section {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #B01923;
+  background-color: #A41919;
   transition: width 0.3s ease-in-out;
 }
 .p-global-nav__link:hover {
-  color: #B01923;
+  color: #A41919;
 }
 .p-global-nav__link:hover:after {
   width: 100%;
@@ -558,7 +559,7 @@ section {
   gap: 24px;
 }
 .p-footer-nav__list--line {
-  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+  border-bottom: 1px solid rgba(74, 73, 72, 0.1);
   padding-bottom: 8px;
 }
 @media (max-width: 576px) {
@@ -572,10 +573,10 @@ section {
 }
 .p-footer-nav__link {
   font-size: 14px;
-  color: rgba(51, 51, 51, 0.8);
+  color: rgba(74, 73, 72, 0.8);
 }
 .p-footer-nav__link:hover {
-  color: #B01923;
+  color: #A41919;
 }
 
 /* Profile Section Styles */
@@ -734,11 +735,11 @@ section {
   }
 }
 .u-color-primary {
-  color: #B01923;
+  color: #A41919;
 }
 
 .u-color-dark {
-  color: #333333;
+  color: #4A4948;
 }
 
 .u-color-light {
@@ -746,7 +747,7 @@ section {
 }
 
 .u-bg-primary {
-  background-color: #B01923;
+  background-color: #A41919;
 }
 
 .u-bg-light {
@@ -754,5 +755,5 @@ section {
 }
 
 .u-bg-dark {
-  background-color: #333333;
+  background-color: #4A4948;
 }

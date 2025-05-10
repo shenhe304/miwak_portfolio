@@ -1,15 +1,17 @@
 // Colors
-$color-primary: #B01923; // Japanese red from the flag
+$color-primary: #A41919; // Japanese red from the flag
 $color-secondary: #4A90E2; // Blue from the mobile project
 $color-tertiary: #4CAF50; // Green from the project
 $color-light: #F8F8F8; // Background light color
-$color-cream: #FFF9F3; // Hero background color
-$color-dark: #333333; // Text dark color
+$color-cream: #FCFAF5; // Hero background color
+$color-dark: #4A4948; // Text dark color
 $color-gray: #CCCCCC; // Gray for subtle elements
 
 // Typography
-$font-family-base: 'Helvetica Neue', Arial, sans-serif;
-$font-family-heading: 'Helvetica Neue', Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+$font-family-base: "Alexandria", sans-serif;
+$font-family-heading: "Alexandria", sans-serif;
 
 $font-size-base: 16px;
 $font-size-small: 14px;
