@@ -1,9 +1,19 @@
+
+.p-footer{
+  &__wrapper{
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .p-footer-nav {
   &__list {
     display: flex;
     gap: $spacing-lg;
 
-    &:first-child{
+    &:nth-child(1){
       border-bottom: 1px solid rgba($color-dark, 0.1);
       padding-bottom: 8px;
     }
@@ -25,11 +35,5 @@
     &:hover {
       color: $color-primary;
     }
-  }
-
-  &__wrapper{
-    padding-top: 8px;
-    display: flex;
-    justify-content: space-between;
   }
 }
