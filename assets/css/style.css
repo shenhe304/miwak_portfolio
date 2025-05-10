@@ -341,9 +341,10 @@ section {
     text-align: center;
   }
 }
-.p-hero__greeting {
-  font-size: 16px;
-  margin-bottom: 8px;
+.p-hero__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .p-hero__title {
   font-size: 3rem;
@@ -360,6 +361,9 @@ section {
   .p-hero__title {
     font-size: 1.8rem;
   }
+}
+.p-hero__image {
+  width: 30%;
 }
 
 .p-works {
@@ -405,22 +409,6 @@ section {
 .p-works__image:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.p-works__item:nth-child(1) {
-  width: 550px;
-}
-
-.p-works__item:nth-child(2) {
-  width: 605px;
-}
-
-.p-works__item:nth-child(3) {
-  width: 710px;
-}
-
-.p-works__item:nth-child(4) {
-  width: 430px;
 }
 
 .p-about {

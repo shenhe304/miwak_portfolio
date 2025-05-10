@@ -18,12 +18,12 @@
     }
   }
 
-  
-  &__greeting {
-    font-size: $font-size-base;
-    margin-bottom: $spacing-sm;
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   &__title {
     font-size: $font-size-hero;
     font-weight: $font-weight-bold;
@@ -37,6 +37,10 @@
     @media (max-width: $breakpoint-sm) {
       font-size: 1.8rem;
     }
+  }
+
+  &__image{
+    width: 30%;
   }
 
 }
