@@ -342,13 +342,20 @@ section {
   }
 }
 .p-hero__content {
-  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
   z-index: 1;
 }
 @media (max-width: 768px) {
   .p-hero__content {
-    width: 100%;
-    text-align: center;
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-top: 48px;
+    opacity: 0.8;
   }
 }
 .p-hero__greeting {
@@ -379,59 +386,6 @@ section {
   .p-hero__subtitle {
     font-size: 16px;
   }
-}
-.p-hero__image {
-  position: absolute;
-  top: 50%;
-  right: 15%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-@media (max-width: 768px) {
-  .p-hero__image {
-    position: relative;
-    top: auto;
-    right: auto;
-    transform: none;
-    margin-top: 48px;
-    opacity: 0.8;
-  }
-}
-.p-hero__japan-flag {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background-color: #B01923;
-}
-@media (max-width: 992px) {
-  .p-hero__japan-flag {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (max-width: 768px) {
-  .p-hero__japan-flag {
-    width: 120px;
-    height: 120px;
-  }
-}
-.p-hero__pattern {
-  position: absolute;
-  background-image: url("../images/wave-pattern.svg");
-  background-repeat: repeat;
-  opacity: 0.1;
-}
-.p-hero__pattern--top-right {
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 300px;
-}
-.p-hero__pattern--bottom-left {
-  bottom: 0;
-  left: 0;
-  width: 300px;
-  height: 300px;
 }
 
 .p-works {

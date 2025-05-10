@@ -17,16 +17,24 @@
       text-align: center;
     }
   }
-  
+
   &__content {
-    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
     z-index: $z-index-default;
     
     @media (max-width: $breakpoint-md) {
-      width: 100%;
-      text-align: center;
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: none;
+      margin-top: $spacing-xxl;
+      opacity: 0.8;
     }
   }
+  
   
   &__greeting {
     font-size: $font-size-base;
@@ -57,58 +65,5 @@
     }
   }
   
-  &__image {
-    position: absolute;
-    top: 50%;
-    right: 15%;
-    transform: translateY(-50%);
-    z-index: $z-index-default;
-    
-    @media (max-width: $breakpoint-md) {
-      position: relative;
-      top: auto;
-      right: auto;
-      transform: none;
-      margin-top: $spacing-xxl;
-      opacity: 0.8;
-    }
-  }
-  
-  &__japan-flag {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background-color: $color-primary;
-    
-    @media (max-width: $breakpoint-lg) {
-      width: 150px;
-      height: 150px;
-    }
-    
-    @media (max-width: $breakpoint-md) {
-      width: 120px;
-      height: 120px;
-    }
-  }
-  
-  &__pattern {
-    position: absolute;
-    background-image: url('../images/wave-pattern.svg');
-    background-repeat: repeat;
-    opacity: 0.1;
-    
-    &--top-right {
-      top: 0;
-      right: 0;
-      width: 300px;
-      height: 300px;
-    }
-    
-    &--bottom-left {
-      bottom: 0;
-      left: 0;
-      width: 300px;
-      height: 300px;
-    }
-  }
+
 }
